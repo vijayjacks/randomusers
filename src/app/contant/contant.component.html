@@ -1,0 +1,27 @@
+
+<section  style="background-color:{{randomUser.eyeColor}}">
+
+<div class="container">
+  <h1 class="header">Random Users</h1>
+   <div class="profiles">
+       <div class="profile-image">
+        <img src="{{randomUser.image}} " alt="">
+       </div>
+       <div class="profile-details">
+        <ul>
+          <li>Name : {{randomUser.firstName}} {{randomUser.lastName}}</li><br>
+          <li>Age : {{randomUser.age}}</li><br>
+          <li>Gender : {{randomUser.gender}}</li><br>
+          <li>height :  {{randomUser.height}}</li><br>
+          <li>weight :  {{randomUser.weight}}</li><br>
+          <li>Email : {{randomUser.email}}</li><br>
+          <li>Phone : {{randomUser.phone}}</li><br>
+
+          <li>address :  {{randomUser.address.address}} {{randomUser.address.city}}</li>
+        </ul>
+
+ </div>
+       <button (click)="ngOnInit()" class="btn">Connect random user</button><br>
+   </div>
+</div>
+</section>
